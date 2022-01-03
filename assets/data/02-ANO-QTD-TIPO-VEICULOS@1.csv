@@ -1,0 +1,169 @@
+"NUM_EXERCICIO","TipoVeiculo","QtdChassi"
+1994,"Automóvel",289499
+1994,"Caminhonete",35899
+1994,"Caminhão",645
+1994,"Motocicleta",82475
+1994,"Outros",29276
+1994,"Ônibus e Microonibus",26
+1995,"Automóvel",304301
+1995,"Caminhonete",36302
+1995,"Caminhão",642
+1995,"Motocicleta",165947
+1995,"Outros",41533
+1995,"Ônibus e Microonibus",30
+1996,"Automóvel",318886
+1996,"Caminhonete",37323
+1996,"Caminhão",634
+1996,"Motocicleta",166239
+1996,"Outros",32043
+1996,"Ônibus e Microonibus",28
+1997,"Automóvel",374398
+1997,"Caminhonete",38059
+1997,"Caminhão",659
+1997,"Motocicleta",167036
+1997,"Outros",33553
+1997,"Ônibus e Microonibus",32
+1998,"Automóvel",415951
+1998,"Caminhonete",40232
+1998,"Caminhão",665
+1998,"Motocicleta",177094
+1998,"Outros",37226
+1998,"Ônibus e Microonibus",35
+1999,"Automóvel",449929
+1999,"Caminhonete",40652
+1999,"Caminhão",703
+1999,"Motocicleta",194378
+1999,"Outros",45703
+1999,"Ônibus e Microonibus",35
+2000,"Automóvel",516273
+2000,"Caminhonete",40709
+2000,"Caminhão",722
+2000,"Motocicleta",299427
+2000,"Outros",47041
+2000,"Ônibus e Microonibus",45
+2001,"Automóvel",536446
+2001,"Caminhonete",41271
+2001,"Caminhão",727
+2001,"Motocicleta",311522
+2001,"Outros",50991
+2001,"Ônibus e Microonibus",938
+2002,"Automóvel",549198
+2002,"Caminhonete",40838
+2002,"Caminhão",490
+2002,"Motocicleta",343545
+2002,"Outros",52518
+2002,"Ônibus e Microonibus",948
+2003,"Automóvel",618877
+2003,"Caminhonete",43220
+2003,"Caminhão",751
+2003,"Motocicleta",367708
+2003,"Outros",54759
+2003,"Ônibus e Microonibus",950
+2004,"Automóvel",646089
+2004,"Caminhonete",46019
+2004,"Caminhão",5315
+2004,"Motocicleta",408327
+2004,"Outros",56744
+2004,"Ônibus e Microonibus",953
+2005,"Automóvel",724962
+2005,"Caminhonete",60961
+2005,"Caminhão",63847
+2005,"Motocicleta",554301
+2005,"Outros",119363
+2005,"Ônibus e Microonibus",25468
+2006,"Automóvel",777415
+2006,"Caminhonete",67192
+2006,"Caminhão",66430
+2006,"Motocicleta",833194
+2006,"Outros",163238
+2006,"Ônibus e Microonibus",27071
+2007,"Automóvel",811901
+2007,"Caminhonete",69392
+2007,"Caminhão",74742
+2007,"Motocicleta",839805
+2007,"Outros",169850
+2007,"Ônibus e Microonibus",28683
+2008,"Automóvel",807489
+2008,"Caminhonete",65128
+2008,"Caminhão",75208
+2008,"Motocicleta",896183
+2008,"Outros",184637
+2008,"Ônibus e Microonibus",31062
+2009,"Automóvel",884996
+2009,"Caminhonete",66813
+2009,"Caminhão",73272
+2009,"Motocicleta",946492
+2009,"Outros",185741
+2009,"Ônibus e Microonibus",32757
+2010,"Automóvel",906910
+2010,"Caminhonete",66908
+2010,"Caminhão",68300
+2010,"Motocicleta",1284264
+2010,"Outros",209849
+2010,"Ônibus e Microonibus",32928
+2011,"Automóvel",966715
+2011,"Caminhonete",72054
+2011,"Caminhão",65683
+2011,"Motocicleta",1349565
+2011,"Outros",218163
+2011,"Ônibus e Microonibus",33633
+2012,"Automóvel",994972
+2012,"Caminhonete",79163
+2012,"Caminhão",65703
+2012,"Motocicleta",1373941
+2012,"Outros",222560
+2012,"Ônibus e Microonibus",33832
+2013,"Automóvel",1082619
+2013,"Caminhonete",81940
+2013,"Caminhão",76302
+2013,"Motocicleta",1383393
+2013,"Outros",227853
+2013,"Ônibus e Microonibus",35888
+2014,"Automóvel",1140804
+2014,"Caminhonete",83406
+2014,"Caminhão",76624
+2014,"Motocicleta",1402410
+2014,"Outros",234302
+2014,"Ônibus e Microonibus",36263
+2015,"Automóvel",1088776
+2015,"Caminhonete",72457
+2015,"Caminhão",63921
+2015,"Motocicleta",1504873
+2015,"Outros",212151
+2015,"Ônibus e Microonibus",32860
+2016,"Automóvel",1089578
+2016,"Caminhonete",76386
+2016,"Caminhão",62525
+2016,"Motocicleta",1597487
+2016,"Outros",223848
+2016,"Ônibus e Microonibus",32104
+2017,"Automóvel",1119459
+2017,"Caminhonete",79555
+2017,"Caminhão",63625
+2017,"Motocicleta",1685246
+2017,"Outros",240820
+2017,"Ônibus e Microonibus",31720
+2018,"Automóvel",1100221
+2018,"Caminhonete",82760
+2018,"Caminhão",63660
+2018,"Motocicleta",1723000
+2018,"Outros",243417
+2018,"Ônibus e Microonibus",32270
+2019,"Automóvel",1108223
+2019,"Caminhonete",82132
+2019,"Caminhão",59710
+2019,"Motocicleta",1741721
+2019,"Outros",248065
+2019,"Ônibus e Microonibus",31651
+2020,"Automóvel",1103351
+2020,"Caminhonete",80859
+2020,"Caminhão",59587
+2020,"Motocicleta",1728381
+2020,"Outros",247253
+2020,"Ônibus e Microonibus",30544
+2021,"Automóvel",1088146
+2021,"Caminhonete",80836
+2021,"Caminhão",57518
+2021,"Motocicleta",1730915
+2021,"Outros",250919
+2021,"Ônibus e Microonibus",29099

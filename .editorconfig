@@ -1,0 +1,15 @@
+# https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# correct spacing on js and css files
+[*.{js,css}]
+charset = utf-8
+indent_style = space
+indent_size = 2
