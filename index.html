@@ -11,86 +11,161 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 	<!-- Leaflet -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" /> -->
 
 	<!-- stylesheet.css -->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body class="">
-
 	<main id="main">
-
-		<section class="section">
-			<div class="container col-xxl-8 px-4 py-5">
-				<div class="row vh-100 flex-lg-row-reverse align-items-center g-5 py-5">
-					<div class="col-10 col-sm-8 col-lg-6">
-						<img src="./assets/img/traffic-jam-file-new-delhi-1004x674.jpg"
-						class="rounded shadow d-block mx-lg-auto img-fluid"
-						alt="Bootstrap Themes" loading="lazy" title="" style="" width="700" height="500">
-					</div>
-					<div class="col-lg-6">
-						<h1 class="display-5 fw-bold lh-1 mb-3">Explorando a frota de veículos do Ceará</h1>
-						<p class="lead">
-							Esse projeto foi realizado para ajudar a extrair informações úteis da configuração da frota de veículos registrados nos municípios do Ceará.
-							Para isso, preparamos uma série de visualizações gráficas interativas que podem ser exploradas abaixo.
-						</p>
-						<p class="h6 text-muted mb-4">
-							Os dados usados nessa página são anônimos e foram cedidos pela <a href="https://www.sefaz.ce.gov.br/" target="_blank" rel="noopener noreferrer" title="Secretaria da Fazenda do estado do Ceará"><span class="fas fa-external-link-alt fa-xs fa-fw"></span> SEFAZ-CE</a>
-						</p>
-						<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-							<a type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2"
-							href="#view-1">
-							Gráficos
-							<i class="fas fa-angle-right"></i>
-						</a>
+		<section class="container">
+			<div class="row">				
+				<div class="col-xxl-8 px-4 py-5">
+					<div class="row min-vh-100 flex-lg-row-reverse align-items-center g-5">
+						<div class="col-10 col-sm-8 col-lg-6">
+							<img src="./assets/img/traffic-jam-file-new-delhi-1004x674.jpg"
+							class="rounded shadow d-block mx-lg-auto img-fluid"
+							alt="Bootstrap Themes" loading="lazy" title="" style="" width="700" height="500">
+						</div>
+						<div class="col-lg-6">
+							<h1 class="display-5 fw-bold lh-1 mb-3">Explorando a frota de veículos do Ceará</h1>
+							<p class="lead">
+								Esse projeto foi realizado para ajudar a extrair informações úteis da configuração da frota de veículos registrados nos municípios do Ceará.
+								Para isso, preparamos uma série de visualizações gráficas interativas que podem ser exploradas abaixo.
+							</p>
+							<p class="h6 text-muted mb-4">
+								Os dados usados nessa página são anônimos e foram cedidos pela <a href="https://www.sefaz.ce.gov.br/" target="_blank" rel="noopener noreferrer" title="Secretaria da Fazenda do estado do Ceará"><span class="fas fa-external-link-alt fa-xs fa-fw"></span> SEFAZ-CE</a>
+							</p>
+							<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+								<a type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" href="#begin">
+									Explorar <i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="section">
-		<div class="container">
-			<div class="box">
-				<h3 class="title">
-					Quantidade de Veículos ao longo dos anos
-				</h3>
-				<div id="view-1"></div>
+		<section class="container" id="begin">
+			<div class="row px-4 py-5 my-5">
+				<div class="col">
+					<div class="row">
+						<div class="col">
+							<h3 class="title">
+								Quantidade de Veículos ao longo dos anos
+							</h3>
+						</div>
+					</div>
+					<iframe width="100%" height="578" frameborder="0" 
+					  src="https://observablehq.com/embed/78a4c49424c19317?cells=chassi_amount_timeline_vl"></iframe>
+				</div>
 			</div>
 
+			<div class="row px-4 py-5 my-5">
+				<div class="col">
+					<iframe width="100%" height="578" frameborder="0" 
+					  src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_yr"></iframe>
+				</div>
+			</div>
 
-			<div id="view-2"></div>
+			<div class="row px-4 py-5 my-5">
+				<div class="col">
+					<iframe width="100%" height="578" frameborder="0" 
+					  src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_region"></iframe>
+				</div>
+			</div>
 
-			<div id="view-3"></div>
+			<div class="row px-4 py-5 my-5">
+				<div class="col">
+					<iframe width="100%" height="490" frameborder="0"
+					  src="https://observablehq.com/embed/78a4c49424c19317?cells=race_chart%2Cviewof+replay%2Cviewof+tipoVeiculoBarras"></iframe>
+				</div>
+			</div>
 
-			<div id="view-4"></div>
+			<div class="row px-4 py-5 my-5">
+				<div class="col">
+					<iframe width="100%" height="490" frameborder="0"
+					  src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+Decada%2Ccalendar_chart"></iframe>
+				</div>
+			</div>
 
-			<div id="view-5"></div>
+			<div class="row px-4 py-5 my-5">
+				<div class="col">
+					<iframe width="100%" height="490" frameborder="0"
+					  src="https://observablehq.com/embed/78a4c49424c19317?cells=qnt_vehicle_map_chart%2Cviewof+tipoVeiculoMapa"></iframe>
+				</div>
+			</div>
 
-			<div id="view-6"></div>
-		</div>
-	</section>
-</main>
+			<div class="row px-4 py-5 my-5">
+				<div class="col">
+					<iframe width="100%" height="490" frameborder="0"
+					  src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+tipoVeiculoMapaFrota%2CmapCearaFrota"></iframe>
+				</div>
+			</div>
+		</section>
 
-<!-- Scripts -->
+		<section class="container">
+			<div class="row h-75 px-4 py-5 text-center">
+				<div class="row">
+					<div class="col">
+						<p class="lead">
+							Desenvolvido com o apoio de
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col">
+						<img class="img-fluid" src="./assets/img/logo-ufc.png" width="120" height="120"
+						title="UFC - Universidade Federal do Ceará">
+					</div>
+					<div class="col">
+						<img class="img-fluid" src="./assets/img/logo-mdcc.png" width="240" height="120"
+						title="MDCC - Programa de Mestrado e Doutorado em Ciência da Computação">
+					</div>
+					<div class="col">
+						<img class="img-fluid" src="./assets/img/logo-sefaz.jpg" width="200" height="120"
+						title="SEFAZ CE - Secretaria da Fazenda do estado do Ceará">
+					</div>
+				</div>
+			</div>
+		</section>
 
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<!-- TODO: -->
+		<!-- Conheça a equipe por trás do projeto -->
+	</main>
 
-<!-- D3.js -->
-<script src="https://d3js.org/d3.v7.min.js"></script>
+	<footer class="text-muted py-5" style="background-color: rgba(0, 0, 0, 0.1);">
+	  	<div class="container">
+		    <p class="float-end mb-1">
+		      	<a href="#main" class="btn btn-outline-primary" title="Voltar para o topo">
+		      		<i class="fas fa-arrow-up"></i>
+		      		<span class="sr-only">Voltar para o topo</span>
+		      	</a>
+		    </p>
+		    <p class="mb-0">Projeto realizado como trabalho final dos integrantes da equipe <br>para a disciplina de Visualização Científica em 2021.2.</p>
+	  	</div>
+	</footer>
 
-<!-- Vegalite -->
-<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+	<!-- Scripts -->
 
-<!-- Leaflet -->
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<!-- main.js -->
-<script type="module" src="main.js"></script>
+	<!-- D3.js -->
+	<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+
+	<!-- Vegalite -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+	-->
+	<!-- Leaflet -->
+	<!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script> -->
+
+	<!-- main.js -->
+	<script type="module" src="main.js"></script>
 </body>
 </html>
