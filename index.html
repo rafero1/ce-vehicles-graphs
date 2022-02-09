@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Explorando a frota de veículos do Ceará</title>
+	<meta property="og:title" content="Explorando a frota de veículos do Ceará" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://rafero1.github.io/ce-vehicles-graphs" />
+	<meta property="og:image" content="https://rafero1.github.io/ce-vehicles-graphs/assets/img/traffic-jam-file-new-delhi-1004x674.jpg" />
 
 	<!-- Stylesheets -->
 
@@ -16,123 +20,239 @@
 	<!-- stylesheet.css -->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<body class="">
+<body class="app">
 	<main id="main">
-		<section class="container">
-			<div class="row">				
-				<div class="col-xxl-8 px-4 py-5">
-					<div class="row min-vh-100 flex-lg-row-reverse align-items-center g-5">
-						<div class="col-10 col-sm-8 col-lg-6">
-							<img src="./assets/img/traffic-jam-file-new-delhi-1004x674.jpg"
-							class="rounded shadow d-block mx-lg-auto img-fluid"
-							alt="Bootstrap Themes" loading="lazy" title="" style="" width="700" height="500">
-						</div>
-						<div class="col-lg-6">
-							<h1 class="display-5 fw-bold lh-1 mb-3">Explorando a frota de veículos do Ceará</h1>
-							<p class="lead">
-								Esse projeto foi realizado para ajudar a extrair informações úteis da configuração da frota de veículos registrados nos municípios do Ceará.
-								Para isso, preparamos uma série de visualizações gráficas interativas que podem ser exploradas abaixo.
-							</p>
-							<p class="h6 text-muted mb-4">
-								Os dados usados nessa página são anônimos e foram cedidos pela <a href="https://www.sefaz.ce.gov.br/" target="_blank" rel="noopener noreferrer" title="Secretaria da Fazenda do estado do Ceará"><span class="fas fa-external-link-alt fa-xs fa-fw"></span> SEFAZ-CE</a>
-							</p>
-							<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-								<a type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" href="#begin">
-									Explorar <i class="fas fa-angle-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="container" id="begin">
-			<div class="row px-4 py-5 my-5">
-				<div class="col">
-					<div class="row">
-						<div class="col">
-							<h3 class="title">
-								Quantidade de Veículos ao longo dos anos
-							</h3>
-						</div>
-					</div>
-					<iframe width="100%" height="578" frameborder="0" 
-					  src="https://observablehq.com/embed/78a4c49424c19317?cells=chassi_amount_timeline_vl"></iframe>
-				</div>
-			</div>
-
-			<div class="row px-4 py-5 my-5">
-				<div class="col">
-					<iframe width="100%" height="578" frameborder="0" 
-					  src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_yr"></iframe>
-				</div>
-			</div>
-
-			<div class="row px-4 py-5 my-5">
-				<div class="col">
-					<iframe width="100%" height="578" frameborder="0" 
-					  src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_region"></iframe>
-				</div>
-			</div>
-
-			<div class="row px-4 py-5 my-5">
-				<div class="col">
-					<iframe width="100%" height="490" frameborder="0"
-					  src="https://observablehq.com/embed/78a4c49424c19317?cells=race_chart%2Cviewof+replay%2Cviewof+tipoVeiculoBarras"></iframe>
-				</div>
-			</div>
-
-			<div class="row px-4 py-5 my-5">
-				<div class="col">
-					<iframe width="100%" height="490" frameborder="0"
-					  src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+Decada%2Ccalendar_chart"></iframe>
-				</div>
-			</div>
-
-			<div class="row px-4 py-5 my-5">
-				<div class="col">
-					<iframe width="100%" height="490" frameborder="0"
-					  src="https://observablehq.com/embed/78a4c49424c19317?cells=qnt_vehicle_map_chart%2Cviewof+tipoVeiculoMapa"></iframe>
-				</div>
-			</div>
-
-			<div class="row px-4 py-5 my-5">
-				<div class="col">
-					<iframe width="100%" height="490" frameborder="0"
-					  src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+tipoVeiculoMapaFrota%2CmapCearaFrota"></iframe>
-				</div>
-			</div>
-		</section>
-
-		<section class="container">
-			<div class="row h-75 px-4 py-5 text-center">
-				<div class="row">
-					<div class="col">
-						<p class="lead">
-							Desenvolvido com o apoio de
+		<div class="container vh-100">
+			<section class="row">
+				<div class="px-4 pt-5 mt-5 mb-3 text-center border-bottom">
+					<h1 class="display-4 fw-bold">Explorando a frota <br>de veículos do Ceará</h1>
+					<div class="col-lg-6 mx-auto">
+						<p class="lead my-3">
+							Esse projeto foi realizado para ajudar a extrair informações úteis da configuração da frota de veículos registrados nos municípios do Ceará.
+							Para isso, preparamos uma série de visualizações gráficas interativas que podem ser exploradas abaixo.
 						</p>
+					  	<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+							<a type="button" class="btn btn-primary btn-lg px-4 me-sm-3" href="#intro">Introdução</a>
+							<a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#visualizacoes">Explorar <i class="fas fa-angle-right"></i></a>
+					  	</div>
+					</div>
+					<div class="overflow-hidden" style="max-height: 30vh;">
+					  	<div class="container px-5">
+							<img src="https://www.archademy.com.br/blog/wp-content/uploads/2019/04/mobilidade.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Mobilidade Urbana" loading="lazy" title="" style="" width="700" height="500">
+					 	</div>
 					</div>
 				</div>
-				<div class="row align-items-center">
-					<div class="col">
-						<img class="img-fluid" src="./assets/img/logo-ufc.png" width="120" height="120"
-						title="UFC - Universidade Federal do Ceará">
+				<div class="text-center">
+					<p class="h6 text-muted mb-4">
+						Os dados usados nessa página são anônimos e foram cedidos pela <a href="https://www.sefaz.ce.gov.br/" target="_blank" rel="noopener noreferrer" title="Secretaria da Fazenda do estado do Ceará"><span class="fas fa-external-link-alt fa-xs fa-fw"></span> SEFAZ-CE</a>
+					</p>
+				</div>
+			</section>
+
+			<!-- <img src="./assets/img/img1.png" alt="" srcset=""> -->
+		</div>
+
+		<section class="container-fluid vh-100" id="intro">
+			<div class="px-4 py-5 my-5 text-center">
+				<header>
+					<div class="d-block mx-auto mb-2">
+						<i class="fas fa-car text-primary" style="font-size: 3rem;"></i>
 					</div>
-					<div class="col">
-						<img class="img-fluid" src="./assets/img/logo-mdcc.png" width="240" height="120"
-						title="MDCC - Programa de Mestrado e Doutorado em Ciência da Computação">
+					<h2 class="display-5 mb-3 fw-bold">Introdução</h2>
+				</header>
+				<div class="col-lg-6 mx-auto">
+					<p class="lead mb-4">As políticas públicas voltadas para a mobilidade urbana avançam nas grandes cidades. Nos últimos dez anos, é possível perceber diversas alterações realizadas em ruas e avenidas para dar mais fluidez ao trânsito e segurança aos pedestres. Na capital, há esforços para construir novos túneis, terminais de ônibus e ciclofaixas, delimitar área segura para pedestre em esquinas, reduzir a velocidade em grandes vias são exemplos de medidas tomadas pelo poder público para tentar dar mais qualidade de vida aos cidadãos e cidadãs nos espaços urbanos.</p>
+
+					<p class="lead mb-4">Em 2013, por exemplo, Fortaleza possuía 54 km de faixas exclusivas para ônibus. Em 2021, esse número saltou para 123 km, de acordo com dados da Empresa de Transporte Urbano de Fortaleza (Etufor). Em 2021, a prefeitura garantiu R$ 32 milhões em subsídios para manter o congelamento do preço das passagens de ônibus em R$ 3,60, valor cobrado desde 2019. (Fonte: <a href="https://diariodonordeste.verdesmares.com.br/metro/o-que-fazer-para-o-transporte-publico-de-fortaleza-voltar-a-atrair-passageiros-e-ter-qualidade-1.3167013" target="_blank" rel="noopener">Diário do Nordeste</a>). Esta é uma estratégia importante para tornar o transporte coletivo atrativo para a maioria da população.</p>
+
+					<p class="lead mb-4">No entanto, a cultura do transporte individual movido a combustíveis não renováveis – uma das pautas da Conferência das Nações Unidas sobre Mudança do Clima, a COP26, realizada em novembro de 2021 - ainda reina nas cidades cearenses. As séries temporais abaixo demonstram a evolução crescente do quantitativo de carros e de motocicletas ao longo dos últimos anos. Este é somente um dos indicativos que demonstra o desafio que o poder público tem de transformar a cultura do transporte individual, que têm impacto no trânsito, na rede pública de saúde e no meio ambiente.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- TODO: -->
+		<!-- Apresentação da equipe -->
+		<!-- "Projeto feito como trabalho para a discplina X de Y" -->
+
+		<section class="container" id="visualizacoes">
+			<div class="row">
+				<div class="col-lg-9 mx-auto">
+					<header class="text-center">
+						<div class="d-block mx-auto mb-2">
+							<i class="fas fa-road text-secondary" style="font-size: 3rem;"></i>
+						</div>
+						<h2 class="display-5 mb-3 fw-bold">Gráficos</h2>
+						<p class="lead">A maioria dos gráficos abaixo possuem <i>tooltips</i> ou alguma interação.
+							<br><strong>Arraste</strong> o mouse sobre os elementos dos gráficos para interagir.
+							<br><span class="text-secondary">Desenvolvidos através da plataforma <a href="https://observablehq.com" rel="noopener" target="_blank">Observable</a></span>
+						</p>
+					</header>
+
+					<div class="row py-5 my-5">
+						<article class="col">
+							<header class="row header mb-4">
+								<h3 class="title">
+									<a href="#quantidade" id="quantidade" class="" title="Quantidade de Veículos">#</a> Quantidade de Veículos
+								</h3>
+								<span class="lead text-secondary">
+									Quantidade total de veículos no Ceará ao longo dos anos.
+								</span>
+							</header>
+							<div class="row mb-4">
+								<iframe width="100%" height="578" frameborder="0"
+								src="https://observablehq.com/embed/78a4c49424c19317?cells=chassi_amount_timeline_vl"></iframe>
+								<iframe width="100%" height="578" frameborder="0"
+								src="https://observablehq.com/embed/78a4c49424c19317?cells=qnt_vehicle_map_chart%2Cviewof+tipoVeiculoMapa"></iframe>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p class="lead text-dark">
+										Perceba o grande aumento da quantidade de veículos registrados entre 2004 e 2006, e novamente, agora em menor escala, entre 2008 e 2010. Podemos conectar esse fato a um possível aumento do poder aquisitivo do cidadão brasileiro durante nesses anos.
+									</p>
+								</div>
+							</div>
+						</article>
 					</div>
-					<div class="col">
-						<img class="img-fluid" src="./assets/img/logo-sefaz.jpg" width="200" height="120"
-						title="SEFAZ CE - Secretaria da Fazenda do estado do Ceará">
+
+					<div class="row py-5 my-5">
+						<article class="col">
+							<header class="row header mb-4">
+								<h3 class="title">
+									<a href="#distribuicoes" id="distribuicoes" class="" title="Distribuições dos Tipos de Veículos">#</a> Distribuições dos Tipos de Veículos
+								</h3>
+								<span class="text-muted">
+									Distribuição de tipos de veículos no Ceará. <strong>Clique e arraste</strong> na linha do tempo para filtrar o mapa de municípios, ou <strong>clique</strong> em algum município para filtrar por município.
+								</span>
+							</header>
+							<div class="row mb-4">
+								<iframe width="100%" height="756" frameborder="0"
+  								src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+type_dist_combined"></iframe>
+								<!-- <iframe width="100%" height="578" frameborder="0"
+								src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_yr"></iframe> -->
+								<!-- <iframe width="100%" height="578" frameborder="0"
+								src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_region"></iframe> -->
+							</div>
+							<!-- <div class="row">
+								<div class="col">
+									<p class="lead">
+										Perceba o grande aumento da quantidade de veículos registrados entre 2004 e 2006, e novamente, agora em menor escala, entre 2008 e 2010. Podemos conectar esse fato a um possível aumento do poder aquisitivo do cidadão brasileiro durante nesses anos.
+									</p>
+								</div>
+							</div> -->
+						</article>
+					</div>
+
+					<div class="row py-5 my-5">
+						<article class="col">
+							<header class="row header mb-4">
+								<h3 class="title">
+									<a href="#corrida" id="corrida" class="" title="Crescimento das Montadores">#</a> Crescimento das Montadores
+								</h3>
+								<span class="text-muted">
+									Quantidade total de veículos no Ceará ao longo do tempo e em cada município. <strong>Clique e arraste</strong> na linha do tempo para filtrar o mapa de municípios, ou <strong>clique</strong> em algum município para filtrar por município. <strong>Aperte</strong> em Replay para reiniciar a animação.
+								</span>
+							</header>
+							<div class="row mb-4">
+								<iframe width="100%" height="578" frameborder="0"
+								src="https://observablehq.com/embed/78a4c49424c19317?cells=race_chart%2Cviewof+replay%2Cviewof+tipoVeiculoBarras"></iframe>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p class="lead">
+										Aqui podemos perceber mais facílmente a explosão de registros de veículos de certas montadoras ao decorrer dos anos.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="row py-5 my-5">
+						<article class="col">
+							<header class="row header mb-4">
+								<h3 class="title">
+									<a href="#vendas" id="vendas" class="" title="Vendas de veículos">#</a> Vendas de veículos
+								</h3>
+								<span class="text-muted">
+									Estes gráficos mostram o valor em R$ de venda de veículos no Ceará de 1990 até 2021. No calendário: quanto mais forte a cor, maior o dinheiro arrecadado; As letras na esquerda representam o dia da semana; <strong>Escolha</strong> um ano do seletor para definir a década; Se estiver no computador, <strong>passe</strong> o mouse por cima de cada dia para obter detalhes.
+								</span>
+							</header>
+							<div class="row mb-4">
+								<iframe width="100%" height="608" frameborder="0"
+									src="https://observablehq.com/embed/78a4c49424c19317?cells=calendar_chart%2Cviewof+Decada"></iframe>
+								<iframe width="100%" height="608" frameborder="0"
+  									src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+cal2"></iframe>
+								<!-- top 10 -->
+								<!-- <iframe width="100%" height="490" frameborder="0"
+								src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+Decada%2Ccalendar_chart"></iframe> -->
+							</div>
+							<div class="row">
+								<div class="col">
+									<p class="lead">
+										No geral, vemos que os valores aumentam bastante com o passar dos anos.
+										Novamente, temos bastante atividade na decada de 2000. 2008 e 2009 apresentaram recordes de vendas que não encontramos em outros anos. Especificamente, o segundo semestre de 2009 foi o período com maior número de vendas de veículos no estado do Ceará.
+										Um ponto interessente é que não vemos valores altos assim entre 2004 e 2006, apesar desses anos apresentarem um aumento de cerca de 800.000 no número de veículos, como descobrimos anteriormente.
+										Finalmente, outro ponto interessante é que as vendas costumam aumentar durante os últimos dias do mês, porém raramente vemos vendas realizadas no final de semana (Sábado e Domingo).
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="row py-5 my-5">
+						<article class="col">
+							<header class="row header mb-4">
+								<h3 class="title">
+									<a href="#idade" id="idade" class="" title="Idade média da frota">#</a> Idade média da frota
+								</h3>
+								<span class="text-muted">
+									Quantidade total de veículos no Ceará ao longo do tempo e em cada município. <strong>Clique e arraste</strong> na linha do tempo para filtrar o mapa de municípios, ou <strong>clique</strong> em algum município para filtrar por município.
+								</span>
+							</header>
+							<div class="row mb-4">
+								<iframe width="100%" height="640" frameborder="0"
+								src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+tipoVeiculoMapaFrota%2CmapCearaFrota"></iframe>
+							</div>
+							<!-- <div class="row">
+								<div class="col">
+									<p class="lead">
+										Perceba o grande aumento da quantidade de veículos registrados entre 2004 e 2006, e novamente, agora em menor escala, entre 2008 e 2010. Podemos conectar esse fato a um possível aumento do poder aquisitivo do cidadão brasileiro durante nesses anos.
+									</p>
+								</div>
+							</div> -->
+						</article>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- TODO: -->
-		<!-- Conheça a equipe por trás do projeto -->
+		<!-- Conclusão -->
+
+		<section class="container">
+			<div class="row h-75 px-4 py-5 my-5 text-center">
+				<div class="row">
+					<div class="col">
+						<p class="lead py-3">
+							Agradecimentos
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<img class="img-fluid" src="./assets/img/logo-ufc.png" width="120" height="120"
+						title="UFC - Universidade Federal do Ceará">
+					</div>
+					<div class="col-md-4">
+						<img class="img-fluid" src="./assets/img/logo-mdcc.png" width="240" height="120"
+						title="MDCC - Programa de Mestrado e Doutorado em Ciência da Computação">
+					</div>
+					<div class="col-md-4">
+						<img class="img-fluid" src="./assets/img/logo-sefaz.jpg" width="200" height="120"
+						title="SEFAZ CE - Secretaria da Fazenda do estado do Ceará">
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer class="text-muted py-5" style="background-color: rgba(0, 0, 0, 0.1);">
@@ -143,7 +263,7 @@
 		      		<span class="sr-only">Voltar para o topo</span>
 		      	</a>
 		    </p>
-		    <p class="mb-0">Projeto realizado como trabalho final dos integrantes da equipe <br>para a disciplina de Visualização Científica em 2021.2.</p>
+		    <p class="mb-0">Projeto realizado como trabalho final para a disciplina de <br> Visualização Científica em 2021.2, ofertada pelo Dept. de Computação da UFC.</p>
 	  	</div>
 	</footer>
 
@@ -151,19 +271,6 @@
 
 	<!-- Bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-	<!-- D3.js -->
-	<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
-
-	<!-- Vegalite -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
-	-->
-	<!-- Leaflet -->
-	<!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script> -->
 
 	<!-- main.js -->
 	<script type="module" src="main.js"></script>
