@@ -7,20 +7,18 @@
 	<meta property="og:title" content="Explorando a frota de veículos do Ceará" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://rafero1.github.io/ce-vehicles-graphs" />
-	<meta property="og:image" content="https://rafero1.github.io/ce-vehicles-graphs/assets/img/traffic-jam-file-new-delhi-1004x674.jpg" />
+	<meta property="og:image" content="https://rafero1.github.io/ce-vehicles-graphs/assets/img/mobilidade.jpeg" />
 
 	<!-- Stylesheets -->
 
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-	<!-- Leaflet -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" /> -->
-
 	<!-- stylesheet.css -->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body class="app">
+
 	<main id="main">
 		<div class="container vh-100">
 			<section class="row">
@@ -33,12 +31,12 @@
 						</p>
 					  	<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
 							<a type="button" class="btn btn-primary btn-lg px-4 me-sm-3" href="#intro">Introdução</a>
-							<a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#visualizacoes">Explorar <i class="fas fa-angle-right"></i></a>
+							<a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#visualizacoes">Gráficos <i class="fas fa-angle-right"></i></a>
 					  	</div>
 					</div>
 					<div class="overflow-hidden" style="max-height: 30vh;">
 					  	<div class="container px-5">
-							<img src="https://www.archademy.com.br/blog/wp-content/uploads/2019/04/mobilidade.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Mobilidade Urbana" loading="lazy" title="" style="" width="700" height="500">
+							<img src="./assets/img/mobilidade.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Mobilidade Urbana" loading="lazy" title="" style="" width="700" height="500">
 					 	</div>
 					</div>
 				</div>
@@ -72,10 +70,6 @@
 			</div>
 		</section>
 
-		<!-- TODO: -->
-		<!-- Apresentação da equipe -->
-		<!-- "Projeto feito como trabalho para a discplina X de Y" -->
-
 		<section class="container" id="visualizacoes">
 			<div class="row">
 				<div class="col-lg-9 mx-auto">
@@ -86,7 +80,7 @@
 						<h2 class="display-5 mb-3 fw-bold">Gráficos</h2>
 						<p class="lead">A maioria dos gráficos abaixo possuem <i>tooltips</i> ou alguma interação.
 							<br><strong>Arraste</strong> o mouse sobre os elementos dos gráficos ou <strong>Clique</strong> neles para interagir.
-							<br><span class="text-secondary">Desenvolvidos através da plataforma <a href="https://observablehq.com" rel="noopener" target="_blank">Observable</a></span>
+							<br><span class="text-secondary">Desenvolvidos através da plataforma <a href="https://observablehq.com" rel="noopener" target="_blank">Observable</a>.</span>
 						</p>
 					</header>
 
@@ -94,17 +88,17 @@
 						<article class="col">
 							<header class="row header mb-4">
 								<h3 class="title">
-									<a href="#quantidade" id="quantidade" class="" title="Quantidade de Veículos">#</a> Quantidade de Veículos
+									<a href="#quantidade" id="quantidade" class="" title="Quantidade de veículos">#</a> Quantidade de veículos
 								</h3>
 								<span class="lead text-secondary">
 									Quantidade total de veículos no Ceará ao longo dos anos.
 								</span>
 							</header>
 							<div class="row mb-4">
-								<iframe width="100%" height="578" frameborder="0"
-								src="https://observablehq.com/embed/78a4c49424c19317?cells=chassi_amount_timeline_vl"></iframe>
-								<iframe width="100%" height="578" frameborder="0"
-								src="https://observablehq.com/embed/78a4c49424c19317?cells=qnt_vehicle_map_chart%2Cviewof+tipoVeiculoMapa"></iframe>
+								<!-- <iframe width="100%" height="578" frameborder="0"
+								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=chassi_amount_timeline_vl"></iframe> -->
+								<iframe width="100%" height="632" frameborder="0"
+  								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=viewof+type_dist_combined"></iframe>
 							</div>
 							<div class="row">
 								<div class="col">
@@ -120,19 +114,15 @@
 						<article class="col">
 							<header class="row header mb-4">
 								<h3 class="title">
-									<a href="#distribuicoes" id="distribuicoes" class="" title="Distribuições dos Tipos de Veículos">#</a> Distribuições dos Tipos de Veículos
+									<a href="#distribuicoes" id="distribuicoes" class="" title="Proporção de veículos por região">#</a> Proporção de veículos por região
 								</h3>
-								<span class="text-muted">
-									Distribuição de tipos de veículos no Ceará. <strong>Clique e arraste</strong> na linha do tempo para filtrar o mapa de municípios, ou <strong>clique</strong> em algum município para filtrar por município.
+								<span class="lead text-secondary">
+									Distribuição da porcentagem de tipos de veículos no Ceará por região metropolitana, em 2021.
 								</span>
 							</header>
 							<div class="row mb-4">
-								<iframe width="100%" height="756" frameborder="0"
-  								src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+type_dist_combined"></iframe>
-								<!-- <iframe width="100%" height="578" frameborder="0"
-								src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_yr"></iframe> -->
-								<!-- <iframe width="100%" height="578" frameborder="0"
-								src="https://observablehq.com/embed/78a4c49424c19317?cells=type_dist_by_region"></iframe> -->
+								<iframe width="100%" height="720" frameborder="0"
+								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=type_dist_by_region"></iframe>
 							</div>
 							<!-- <div class="row">
 								<div class="col">
@@ -148,15 +138,18 @@
 						<article class="col">
 							<header class="row header mb-4">
 								<h3 class="title">
-									<a href="#corrida" id="corrida" class="" title="Crescimento das Montadores">#</a> Crescimento das Montadores
+									<a href="#corrida" id="corrida" class="" title="Crescimento das montadoras">#</a> Crescimento das montadoras
 								</h3>
-								<span class="text-muted">
-									Quantidade total de veículos no Ceará ao longo do tempo e em cada município. <strong>Clique e arraste</strong> na linha do tempo para filtrar o mapa de municípios, ou <strong>clique</strong> em algum município para filtrar por município. <strong>Aperte</strong> em Replay para reiniciar a animação.
+								<span class="lead text-secondary">
+									Crescimento das montadoras no ceará com o passar dos anos. O número representa a quantidade de veículos registrados daquela montadora no estado em determinada época. <strong>Aperte</strong> em Replay para reiniciar a animação e use o <strong>Seletor</strong> para escolher o tipo de veículo.
 								</span>
 							</header>
 							<div class="row mb-4">
 								<iframe width="100%" height="578" frameborder="0"
-								src="https://observablehq.com/embed/78a4c49424c19317?cells=race_chart%2Cviewof+replay%2Cviewof+tipoVeiculoBarras"></iframe>
+								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=race_chart%2Cviewof+replay%2Cviewof+tipoVeiculoBarras"></iframe>
+								<!-- quantidade dos modelos -->
+								<!-- <iframe width="100%" height="490" frameborder="0"
+								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=viewof+Decada%2Ccalendar_chart"></iframe> -->
 							</div>
 							<div class="row">
 								<div class="col">
@@ -174,18 +167,15 @@
 								<h3 class="title">
 									<a href="#vendas" id="vendas" class="" title="Vendas de veículos">#</a> Vendas de veículos
 								</h3>
-								<span class="text-muted">
-									Estes gráficos mostram o valor em R$ de venda de veículos no Ceará de 1990 até 2021. No calendário: quanto mais forte a cor, maior o dinheiro arrecadado; As letras na esquerda representam o dia da semana; <strong>Escolha</strong> um ano do seletor para definir a década; Se estiver no computador, <strong>passe</strong> o mouse por cima de cada dia para obter detalhes.
+								<span class="lead text-secondary">
+									Valor em R$ de venda de veículos no Ceará de 1990 até 2021. No calendário: quanto mais forte a cor, maior o dinheiro arrecadado; As letras na esquerda representam o dia da semana; <strong>Escolha</strong> um ano do seletor para definir a década; Se estiver no computador, <strong>passe</strong> o mouse por cima de cada dia para obter detalhes.
 								</span>
 							</header>
 							<div class="row mb-4">
 								<iframe width="100%" height="608" frameborder="0"
-									src="https://observablehq.com/embed/78a4c49424c19317?cells=calendar_chart%2Cviewof+Decada"></iframe>
+									src="https://observablehq.com/embed/4ce211ed96a728ca?cells=calendar_chart%2Cviewof+Decada"></iframe>
 								<iframe width="100%" height="608" frameborder="0"
-  									src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+cal2"></iframe>
-								<!-- top 10 -->
-								<!-- <iframe width="100%" height="490" frameborder="0"
-								src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+Decada%2Ccalendar_chart"></iframe> -->
+  									src="https://observablehq.com/embed/4ce211ed96a728ca?cells=viewof+cal2"></iframe>
 							</div>
 							<div class="row">
 								<div class="col">
@@ -206,21 +196,25 @@
 								<h3 class="title">
 									<a href="#idade" id="idade" class="" title="Idade média da frota">#</a> Idade média da frota
 								</h3>
-								<span class="text-muted">
-									Quantidade total de veículos no Ceará ao longo do tempo e em cada município. <strong>Clique e arraste</strong> na linha do tempo para filtrar o mapa de municípios, ou <strong>clique</strong> em algum município para filtrar por município.
+								<span class="lead text-secondary">
+									Idade média da frota de cada município do Ceará por tipo de veículo. Use o <strong>Seletor</strong> para escolher o tipo de veículo.
 								</span>
 							</header>
 							<div class="row mb-4">
-								<iframe width="100%" height="640" frameborder="0"
-								src="https://observablehq.com/embed/78a4c49424c19317?cells=viewof+tipoVeiculoMapaFrota%2CmapCearaFrota"></iframe>
+								<!-- <iframe width="100%" height="640" frameborder="0"
+								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=viewof+tipoVeiculoMapaFrota%2CmapCearaFrota"></iframe> -->
+								<iframe width="100%" height="1159" frameborder="0"
+  								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=qnt_vehicle_map_chart%2Cviewof+tipoVeiculoMapa%2CmapCearaFrota"></iframe>
 							</div>
-							<!-- <div class="row">
+							<div class="row">
 								<div class="col">
 									<p class="lead">
-										Perceba o grande aumento da quantidade de veículos registrados entre 2004 e 2006, e novamente, agora em menor escala, entre 2008 e 2010. Podemos conectar esse fato a um possível aumento do poder aquisitivo do cidadão brasileiro durante nesses anos.
+										Vemos que, salve algumas exceções, a idade de cada tipo de veículo não costuma mudar muito de município a município.
+										As maiores exceções a essa observação estão em "Ônibus e Microonibus" e "Outros".
+										Finalmente, podemos concluir que os tipos de veículos que costumam ser mais velhos dentro do Ceará são caminhões e caminhonetes, e os mais novos motocicletas.
 									</p>
 								</div>
-							</div> -->
+							</div>
 						</article>
 					</div>
 				</div>
@@ -228,7 +222,8 @@
 		</section>
 
 		<!-- TODO: -->
-		<!-- Conclusão -->
+		<!-- Apresentação da equipe -->
+		<!-- "Projeto feito como trabalho para a discplina X de Y" -->
 
 		<section class="container">
 			<div class="row h-75 px-4 py-5 my-5 text-center">
@@ -241,15 +236,15 @@
 				</div>
 				<div class="row align-items-center">
 					<div class="col-md-4">
-						<img class="img-fluid" src="./assets/img/logo-ufc.png" width="120" height="120"
+						<img class="img-fluid py-2" src="./assets/img/logo-ufc.png" width="120" height="120"
 						title="UFC - Universidade Federal do Ceará">
 					</div>
 					<div class="col-md-4">
-						<img class="img-fluid" src="./assets/img/logo-mdcc.png" width="240" height="120"
+						<img class="img-fluid py-2" src="./assets/img/logo-mdcc.png" width="240" height="120"
 						title="MDCC - Programa de Mestrado e Doutorado em Ciência da Computação">
 					</div>
 					<div class="col-md-4">
-						<img class="img-fluid" src="./assets/img/logo-sefaz.jpg" width="200" height="120"
+						<img class="img-fluid py-2" src="./assets/img/logo-sefaz.jpg" width="200" height="120"
 						title="SEFAZ CE - Secretaria da Fazenda do estado do Ceará">
 					</div>
 				</div>
