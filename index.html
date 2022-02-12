@@ -79,7 +79,7 @@
 						</div>
 						<h2 class="display-5 mb-3 fw-bold">Gráficos</h2>
 						<p class="lead">A maioria dos gráficos abaixo possuem <i>tooltips</i> ou alguma interação.
-							<br><strong>Arraste</strong> o mouse sobre os elementos dos gráficos ou <strong>Clique</strong> neles para interagir.
+							<br><strong>Arraste</strong> o mouse sobre os elementos dos gráficos ou <strong>Aperte</strong> neles para interagir.
 							<br><span class="text-secondary">Desenvolvidos através da plataforma <a href="https://observablehq.com" rel="noopener" target="_blank">Observable</a>.</span>
 						</p>
 					</header>
@@ -147,14 +147,36 @@
 							<div class="row mb-4">
 								<iframe width="100%" height="578" frameborder="0"
 								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=race_chart%2Cviewof+replay%2Cviewof+tipoVeiculoBarras"></iframe>
-								<!-- quantidade dos modelos -->
-								<!-- <iframe width="100%" height="490" frameborder="0"
-								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=viewof+Decada%2Ccalendar_chart"></iframe> -->
 							</div>
 							<div class="row">
 								<div class="col">
 									<p class="lead">
-										Aqui podemos perceber mais facílmente a explosão de registros de veículos de certas montadoras ao decorrer dos anos. Em especial, notamos a explosão da quantidade de motos, especificamente HONDA, em 2004.
+										Através desse gráfico podemos ver em tempo real a popularidade de certas montadoras, de acordo com a quantidade de veículos delas  presentes no estado. Em especial, podemos destacar o grande aumento da quantidade de motos, especificamente HONDA, em 2004.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="row py-5 my-5">
+						<article class="col">
+							<header class="row header mb-4">
+								<h3 class="title">
+									<a href="#corrida" id="corrida" class="" title="Crescimento de modelos de carro">#</a> Crescimento de modelos de carro
+								</h3>
+								<span class="lead text-secondary">
+									Quantidade de carros de cada modelo com o passar dos anos. O número representa a quantidade de veículos daquele modelo de carro registrados no estado em determinada época. <strong>Aperte</strong> em Replay para reiniciar a animação.
+								</span>
+							</header>
+							<div class="row mb-4">
+								<iframe width="100%" height="680" frameborder="0"
+  								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=race_chart_models%2Cviewof+replay_models"></iframe>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p class="lead">
+										Aqui podemos perceber ver como os diferentes modelos de carros ganham ou perdem popularidade com o passar dos anos. Claro, existem vários fatores em jogo que ajudam a determinar a dada popularidade de um modelo, como preço, funcionalidades etc.
+										Neste gráfico, podemos ver como carros Uno, Gol e Palio passaram um bom tempo dominando o mercado cearênse, e que apenas em anos recentes novos modelos começam a se tornar os mais populares.
 									</p>
 								</div>
 							</div>
@@ -197,12 +219,10 @@
 									<a href="#idade" id="idade" class="" title="Proporção de veículos por população e Idade média da frota">#</a> Proporção de veículos por população e Idade média da frota
 								</h3>
 								<span class="lead text-secondary">
-									O primeiro mapa mostra a taxa porporcional da quantidade de veículos por pessoa em cada município. O segundo mostra a idade média da frota de cada município do Ceará. Ambos representam dados de 2021 e podem ser filtrados através do <strong>Seletor</strong> para escolher o tipo de veículo desejado.
+									O primeiro mapa mostra a taxa proporcional da quantidade de veículos por pessoa em cada município. O segundo mostra a idade média da frota de cada município do Ceará. Ambos representam dados de 2021 e podem ser filtrados através do <strong>Seletor</strong> para escolher o tipo de veículo desejado.
 								</span>
 							</header>
 							<div class="row mb-4">
-								<!-- <iframe width="100%" height="640" frameborder="0"
-								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=viewof+tipoVeiculoMapaFrota%2CmapCearaFrota"></iframe> -->
 								<iframe width="100%" height="1159" frameborder="0"
   								src="https://observablehq.com/embed/4ce211ed96a728ca?cells=qnt_vehicle_map_chart%2Cviewof+tipoVeiculoMapa%2CmapCearaFrota"></iframe>
 							</div>
