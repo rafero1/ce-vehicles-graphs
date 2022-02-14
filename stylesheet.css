@@ -1,1 +1,5 @@
 @import "./assets/vendor/fontawesome/css/all.min.css";
+
+.lead {
+    font-weight: 350;
+}
